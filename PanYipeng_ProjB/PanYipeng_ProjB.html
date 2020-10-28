@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Project_B</title>
+  </head>
+	<!--	Create the HTML5 'canvas' element in which we will run WebGL
+	-->
+  <body onload="main()">
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+	<p>
+		K/L: Start/Stop flying.<br>
+		W/S/A/D: Move the camera.   ArrowKeys: Rotate the camera.<br>
+		Mouse drag: Rotate the pyramid.
+    </p>
+		<div id=QuatValue>  X=0i, Y=0j, Z=0k, W=1. length=1. </div>
+	<button type="button" onClick="resetQuat()">Reset</button>
+	<!--	Load in the JavaScript libraries supplied by our textbook 
+			(Matsuda et al., 2013 WebGL Programming Guide) that help us
+			with WebGL programming:
+	-->
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-quat03.js"></script>
+	<!--	Finally, load in our own JavaScript program file.
+	-->
+    <script src="PanYipeng_ProjB.js"></script>
+  </body>
+</html>
